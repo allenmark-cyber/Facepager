@@ -31,8 +31,8 @@
                 "summary" : "This represents a Facebook Page. The /{page-id} node returns a single page.",
                 "externalDocs": {
                     "url":"https://developers.facebook.com/docs/graph-api/reference/v3.2/page"
-                },             
-                "parameters" : [                 
+                },
+                "parameters" : [
                     {
                       "name" : "page-id",
                       "in" : "path",
@@ -196,7 +196,7 @@
                                 {"const":"website","description":"The URL of the Page's website"},
                                 {"const":"were_here_count","description":"The number of visits to this Page's location. If the Page setting Show map, check-ins and star ratings on the Page (under Page Settings > Page Info > Address) is disabled, then this value will also be disabled"},
                                 {"const":"whatsapp_number","description":"whatsapp number"},
-                                {"const":"written_by","description":"The writer of the TV show. Applicable to TV Shows"}                            
+                                {"const":"written_by","description":"The writer of the TV show. Applicable to TV Shows"}
                             ]
                         }
                       },
@@ -367,7 +367,7 @@
                 "externalDocs": {
                     "url":"https://developers.facebook.com/docs/graph-api/reference/v3.2/page/feed"
                 },
-                "parameters" : [ 
+                "parameters" : [
                     {
                       "name" : "page-id",
                       "in" : "path",
@@ -471,7 +471,7 @@
                         }
                       },
                       "example" : "id,caption,message,created_time,from,type,status_type"
-                    }                
+                    }
                 ],
                 "responses" : {
                     "200" : {
@@ -529,7 +529,7 @@
                                                     "to":{"description":"Profiles mentioned or targeted in this post. If you read this field with a user access token, it returns only the current user."},
                                                     "type":{"description":"A string indicating the object type of this post."},
                                                     "updated_time":{"description":"This field's behavior depends on the type of object the Post is on:"},
-                                                    "with_tags":{"description":"Profiles tagged as being 'with' the publisher of the post. If you read this field with a user access token, it returns only the current user."}                            
+                                                    "with_tags":{"description":"Profiles tagged as being 'with' the publisher of the post. If you read this field with a user access token, it returns only the current user."}
                                                }
                                            }
                                         }
@@ -539,7 +539,7 @@
                         }
                     }
                 }
-            }  
+            }
         },
 		"/{page-id}/likes": {
 			"get":{
@@ -554,12 +554,12 @@
                       "description" : "ID of the page",
                       "required" : true,
                       "schema":{"type":"string"}
-                    },	
+                    },
 					{
                       "name" : "target_id",
                       "in" : "query",
                       "description" : "Target node",
-                      "schema":{"type":"numeric string"}					
+                      "schema":{"type":"numeric string"}
 					},
 					{
                       "name" : "fields",
@@ -711,7 +711,7 @@
                                 {"const":"website","description":"The URL of the Page's website"},
                                 {"const":"were_here_count","description":"The number of visits to this Page's location. If the Page setting Show map, check-ins and star ratings on the Page (under Page Settings > Page Info > Address) is disabled, then this value will also be disabled"},
                                 {"const":"whatsapp_number","description":"whatsapp number"},
-                                {"const":"written_by","description":"The writer of the TV show. Applicable to TV Shows"}                            
+                                {"const":"written_by","description":"The writer of the TV show. Applicable to TV Shows"}
                             ]
                         }
                       },
@@ -880,7 +880,7 @@
 								}
 							}
 						}
-					}	
+					}
 				}
 			}
 		},
@@ -897,7 +897,7 @@
                       "description" : "ID of the page",
                       "required" : true,
                       "schema":{"type":"string"}
-                    },	
+                    },
 					{
                       "name" : "fields",
                       "in" : "query",
@@ -1048,7 +1048,7 @@
                                 {"const":"website","description":"The URL of the Page's website"},
                                 {"const":"were_here_count","description":"The number of visits to this Page's location. If the Page setting Show map, check-ins and star ratings on the Page (under Page Settings > Page Info > Address) is disabled, then this value will also be disabled"},
                                 {"const":"whatsapp_number","description":"whatsapp number"},
-                                {"const":"written_by","description":"The writer of the TV show. Applicable to TV Shows"}                            
+                                {"const":"written_by","description":"The writer of the TV show. Applicable to TV Shows"}
                             ]
                         }
                       },
@@ -1219,15 +1219,15 @@
 						}
 					}
 				}
-			}	
-		},	
+			}
+		},
 		"/{page-id}/milestones": {
             "get" : {
                 "summary" : "Milestones which are also known as Life Events for a Facebook Page.",
                 "externalDocs": {
                     "url":"https://developers.facebook.com/docs/graph-api/reference/page/milestones/"
-                },             
-                "parameters" : [                 
+                },
+                "parameters" : [
                     {
                       "name" : "page-id",
                       "in" : "path",
@@ -1297,8 +1297,8 @@
                 "summary" : "This Page's photos",
                 "externalDocs": {
                     "url":"https://developers.facebook.com/docs/graph-api/reference/page/photos/"
-                },             
-                "parameters" : [                 
+                },
+                "parameters" : [
                     {
                       "name" : "page-id",
                       "in" : "path",
@@ -1325,7 +1325,7 @@
                       "schema":
 						{"type":"string",
 						"enum": ["profile", "tagged", "uploaded"]}
-                    },					
+                    },
                     {
                       "name" : "fields",
                       "in" : "query",
@@ -1414,14 +1414,14 @@
 					}
 				}
 			}
-		},					
+		},
 		"/{page-id}/posts": {
             "get" : {
                 "summary" : "Shows only the posts that were published by this page.",
                 "externalDocs": {
                     "url":"https://developers.facebook.com/docs/graph-api/reference/v3.2/page/feed"
                 },
-                "parameters" : [ 
+                "parameters" : [
                     {
                       "name" : "page-id",
                       "in" : "path",
@@ -1525,7 +1525,7 @@
                         }
                       },
                       "example" : "id,caption,message,created_time,from,type,status_type"
-                    }                
+                    }
                 ],
 			"responses" : {
 				"200" : {
@@ -1583,7 +1583,7 @@
 													"to":{"description":"Profiles mentioned or targeted in this post. If you read this field with a user access token, it returns only the current user."},
 													"type":{"description":"A string indicating the object type of this post."},
 													"updated_time":{"description":"This field's behavior depends on the type of object the Post is on:"},
-													"with_tags":{"description":"Profiles tagged as being 'with' the publisher of the post. If you read this field with a user access token, it returns only the current user."}                            
+													"with_tags":{"description":"Profiles tagged as being 'with' the publisher of the post. If you read this field with a user access token, it returns only the current user."}
 												}
 											}
 										}
@@ -1593,15 +1593,15 @@
                         }
                     }
                 }
-            }  
-        },		
+            }
+        },
 		"/{page-id}/videos": {
             "get" : {
                 "summary" : "Videos for a Facebook Page.",
                 "externalDocs": {
                     "url":"https://developers.facebook.com/docs/graph-api/reference/page/videos/"
-					},             
-                "parameters" : [                 
+					},
+                "parameters" : [
                     {
                       "name" : "page-id",
                       "in" : "path",
@@ -1617,7 +1617,7 @@
                       "schema":
 						{"type":"string",
 						"enum": ["tagged","uploaded"]}
-                    },		
+                    },
                     {
                       "name" : "fields",
                       "in" : "query",
@@ -1627,38 +1627,38 @@
                         "items" : {
                             "type":"string",
                             "oneOf":[
-								{"const": "ad_breaks", "description": "Time offsets of ad breaks in milliseconds. Ad breaks are short ads that play within a video."}, 
-								{"const": "backdated_time", "description": "The time when the video post was created."}, 
-								{"const": "backdated_time_granularity", "description": "Accuracy of the backdated time."}, 
-								{"const": "content_category", "description": "The content category of this video."}, 
-								{"const": "content_tags", "description": "Tags that describe the contents of the video."}, 
-								{"const": "created_time", "description": "The time the video was initially published."}, 
-								{"const": "custom_labels", "description": "Labels used to describe the video. Unlike content tags, custom labels are not published and only appear in insights data."}, 
-								{"const": "description", "description": "The description of the video."}, 
-								{"const": "embed_html", "description": "The HTML element that may be embedded in a Web page to play the video."}, 
-								{"const": "event", "description": "event"}, 
-								{"const": "format", "description": "The different formats of the video."}, 
-								{"const": "from", "description": "The profile that created the video."}, 
-								{"const": "icon", "description": "The icon that Facebook displays when videos are published to the feed."}, 
-								{"const": "id", "description": "The video ID."}, 
-								{"const": "embeddable", "description": "Whether the video is embeddable."}, 
-								{"const": "is_crosspost_video", "description": "Whether the video is crossposted from other page."}, 
-								{"const": "is_crossposting_eligible", "description": "Specifies if the video is eligible for crossposting. Page access-token is required to query this field."}, 
-								{"const": "is_instagram_eligible", "description": "Whether the video is eligible to be promoted on Instagram"}, 
-								{"const": "length", "description": "Duration of this video in seconds."}, 
-								{"const": "live_status", "description": "The live status of the video"}, 
-								{"const": "permalink_url", "description": "URL to the permalink page of the video."}, 
-								{"const": "picture", "description": "The URL for the thumbnail picture of the video."}, 
-								{"const": "place", "description": "Location associated with the video, if any."}, 
-								{"const": "premiere_living_room_status", "description": "The status of the Premiere Watch Party, if any"}, 
-								{"const": "privacy", "description": "Privacy setting for the video."}, 
-								{"const": "published", "description": "Whether a post about this video is published. The post is not scheduled, draft, or ads_post."}, 
-								{"const": "scheduled_publish_time", "description": "The time that the video is scheduled to publish."}, 
-								{"const": "source", "description": "A URL to the raw, playable video file."}, 
-								{"const": "status", "description": "Object describing the status attributes of a video."}, 
+								{"const": "ad_breaks", "description": "Time offsets of ad breaks in milliseconds. Ad breaks are short ads that play within a video."},
+								{"const": "backdated_time", "description": "The time when the video post was created."},
+								{"const": "backdated_time_granularity", "description": "Accuracy of the backdated time."},
+								{"const": "content_category", "description": "The content category of this video."},
+								{"const": "content_tags", "description": "Tags that describe the contents of the video."},
+								{"const": "created_time", "description": "The time the video was initially published."},
+								{"const": "custom_labels", "description": "Labels used to describe the video. Unlike content tags, custom labels are not published and only appear in insights data."},
+								{"const": "description", "description": "The description of the video."},
+								{"const": "embed_html", "description": "The HTML element that may be embedded in a Web page to play the video."},
+								{"const": "event", "description": "event"},
+								{"const": "format", "description": "The different formats of the video."},
+								{"const": "from", "description": "The profile that created the video."},
+								{"const": "icon", "description": "The icon that Facebook displays when videos are published to the feed."},
+								{"const": "id", "description": "The video ID."},
+								{"const": "embeddable", "description": "Whether the video is embeddable."},
+								{"const": "is_crosspost_video", "description": "Whether the video is crossposted from other page."},
+								{"const": "is_crossposting_eligible", "description": "Specifies if the video is eligible for crossposting. Page access-token is required to query this field."},
+								{"const": "is_instagram_eligible", "description": "Whether the video is eligible to be promoted on Instagram"},
+								{"const": "length", "description": "Duration of this video in seconds."},
+								{"const": "live_status", "description": "The live status of the video"},
+								{"const": "permalink_url", "description": "URL to the permalink page of the video."},
+								{"const": "picture", "description": "The URL for the thumbnail picture of the video."},
+								{"const": "place", "description": "Location associated with the video, if any."},
+								{"const": "premiere_living_room_status", "description": "The status of the Premiere Watch Party, if any"},
+								{"const": "privacy", "description": "Privacy setting for the video."},
+								{"const": "published", "description": "Whether a post about this video is published. The post is not scheduled, draft, or ads_post."},
+								{"const": "scheduled_publish_time", "description": "The time that the video is scheduled to publish."},
+								{"const": "source", "description": "A URL to the raw, playable video file."},
+								{"const": "status", "description": "Object describing the status attributes of a video."},
 								{"const": "title", "description": "The video title or caption."},
 								{"const": "universal_video_id", "description": "The publishers asset management code for this video."},
-								{"const": "updated_time", "description": "The last time the video or its caption was updated."}								
+								{"const": "updated_time", "description": "The last time the video or its caption was updated."}
 							]
 						}
                       },
@@ -1678,38 +1678,38 @@
                                             "items" : {
                                                 "type":"object",
                                                 "properties": {
-													"ad_breaks":{"description": "Time offsets of ad breaks in milliseconds. Ad breaks are short ads that play within a video."}, 
-													"backdated_time":{"description": "The time when the video post was created."}, 
-													"backdated_time_granularity":{"description": "Accuracy of the backdated time."}, 
-													"content_category":{"description": "The content category of this video."}, 
-													"content_tags":{"description": "Tags that describe the contents of the video."}, 
-													"created_time":{"description": "The time the video was initially published."}, 
-													"custom_labels":{"description": "Labels used to describe the video. Unlike content tags, custom labels are not published and only appear in insights data."}, 
-													"description":{"description": "The description of the video."}, 
-													"embed_html":{"description": "The HTML element that may be embedded in a Web page to play the video."}, 
-													"event":{"description": "event"}, 
-													"format":{"description": "The different formats of the video."}, 
-													"from":{"description": "The profile that created the video."}, 
-													"icon":{"description": "The icon that Facebook displays when videos are published to the feed."}, 
-													"id":{"description": "The video ID."}, 
-													"embeddable":{"description": "Whether the video is embeddable."}, 
-													"is_crosspost_video":{"description": "Whether the video is crossposted from other page."}, 
-													"is_crossposting_eligible":{"description": "Specifies if the video is eligible for crossposting. Page access-token is required to query this field."}, 
-													"is_instagram_eligible":{"description": "Whether the video is eligible to be promoted on Instagram"}, 
-													"length":{"description": "Duration of this video in seconds."}, 
-													"live_status":{"description": "The live status of the video"}, 
-													"permalink_url":{"description": "URL to the permalink page of the video."}, 
-													"picture":{"description": "The URL for the thumbnail picture of the video."}, 
-													"place":{"description": "Location associated with the video, if any."}, 
-													"premiere_living_room_status":{"description": "The status of the Premiere Watch Party, if any"}, 
-													"privacy":{ "description":"Privacy setting for the video."}, 
-													"published":{ "description":"Whether a post about this video is published. The post is not scheduled, draft, or ads_post."}, 
-													"scheduled_publish_time":{"description": "The time that the video is scheduled to publish."}, 
-													"source":{ "description":"A URL to the raw, playable video file."}, 
-													"status":{ "description":"Object describing the status attributes of a video."}, 
+													"ad_breaks":{"description": "Time offsets of ad breaks in milliseconds. Ad breaks are short ads that play within a video."},
+													"backdated_time":{"description": "The time when the video post was created."},
+													"backdated_time_granularity":{"description": "Accuracy of the backdated time."},
+													"content_category":{"description": "The content category of this video."},
+													"content_tags":{"description": "Tags that describe the contents of the video."},
+													"created_time":{"description": "The time the video was initially published."},
+													"custom_labels":{"description": "Labels used to describe the video. Unlike content tags, custom labels are not published and only appear in insights data."},
+													"description":{"description": "The description of the video."},
+													"embed_html":{"description": "The HTML element that may be embedded in a Web page to play the video."},
+													"event":{"description": "event"},
+													"format":{"description": "The different formats of the video."},
+													"from":{"description": "The profile that created the video."},
+													"icon":{"description": "The icon that Facebook displays when videos are published to the feed."},
+													"id":{"description": "The video ID."},
+													"embeddable":{"description": "Whether the video is embeddable."},
+													"is_crosspost_video":{"description": "Whether the video is crossposted from other page."},
+													"is_crossposting_eligible":{"description": "Specifies if the video is eligible for crossposting. Page access-token is required to query this field."},
+													"is_instagram_eligible":{"description": "Whether the video is eligible to be promoted on Instagram"},
+													"length":{"description": "Duration of this video in seconds."},
+													"live_status":{"description": "The live status of the video"},
+													"permalink_url":{"description": "URL to the permalink page of the video."},
+													"picture":{"description": "The URL for the thumbnail picture of the video."},
+													"place":{"description": "Location associated with the video, if any."},
+													"premiere_living_room_status":{"description": "The status of the Premiere Watch Party, if any"},
+													"privacy":{ "description":"Privacy setting for the video."},
+													"published":{ "description":"Whether a post about this video is published. The post is not scheduled, draft, or ads_post."},
+													"scheduled_publish_time":{"description": "The time that the video is scheduled to publish."},
+													"source":{ "description":"A URL to the raw, playable video file."},
+													"status":{ "description":"Object describing the status attributes of a video."},
 													"title":{ "description":"The video title or caption."},
 													"universal_video_id":{"description": "The publishers asset management code for this video."},
-													"updated_time":{"description": "The last time the video or its caption was updated."}	
+													"updated_time":{"description": "The last time the video or its caption was updated."}
 												}
 											}
 										}
@@ -1720,14 +1720,14 @@
 					}
 				}
 			}
-		},		
+		},
 		"/{post-id}": {
             "get" : {
                 "summary" : "An individual entry in a profile's feed. The profile could be a user, page, app, or group.",
                 "externalDocs": {
                     "url":"https://developers.facebook.com/docs/graph-api/reference/v3.2/post"
-                },             
-                "parameters" : [                 
+                },
+                "parameters" : [
                     {
                       "name" : "post-id",
                       "in" : "path",
@@ -1744,53 +1744,53 @@
                         "items" : {
                             "type":"string",
                             "oneOf":[
-								 {"const": "id", "description": "The post ID"}, 
-								 {"const": "actions", "description": "Action links"}, 
-								 {"const": "admin_creator", "description": "The admin creator of a Page post. If the Page has only one admin, no data will be returned. Requires a Page Access Token and the business_management permission."}, 
-								 {"const": "allowed_advertising_objects", "description": "Objectives under which this post can be advertised"}, 
-								 {"const": "application", "description": "Information about the app this post was published by."}, 
-								 {"const": "attachments", "description": "Any attachments that are associated with the story"}, 
-								 {"const": "backdated_time", "description": "The backdated time for backdate post. For regular post, this field will be set to null."}, 
-								 {"const": "call_to_action", "description": "The call to action type used in any Page posts for mobile app engagement ads."}, 
-								 {"const": "can_reply_privately", "description": "Whether the Page viewer can send a private reply to this Post. Requires the read_page_mailboxes permission."}, 
-								 {"const": "caption", "description": "Link caption in post that appears below name. The caption must be an actual URLs and should accurately reflect the URL and associated advertiser or business someone visits when they click on it."}, 
-								 {"const": "child_attachments", "description": "Sub-shares of a multi-link share post."}, 
-								 {"const": "created_time", "description": "The time the post was initially published. For a post about a life event, this will be the date and time of the life event."}, 
-								 {"const": "description", "description": "A description of a link in the post (appears beneath the caption)."}, 
-								 {"const": "feed_targeting", "description": "Object that controls news feed targeting for this post. Anyone in these groups will be more likely to see this post, others will be less likely, but may still see it anyway. Any of the targeting fields shown here can be used, none are required (applies to Pages only)."}, 
-								 {"const": "from", "description": "Information (name and id) about the Profile that created the Post.  If you read this field with a user access token, it returns only the current user."}, 
-								 {"const": "full_picture", "description": "URL to a full-sized version of the Photo published in the Post or scraped from a link in the Post. If the photo's largest dimension exceeds 720 pixels, it will be resized, with the largest dimension set to 720."}, 
-								 {"const": "icon", "description": "A link to an icon representing the type of this post."}, 
-								 {"const": "instagram_eligibility", "description": "Whether the post can be promoted on Instagram. It returns the enum eligible if it can be promoted.  Otherwise it returns an enum for why it cannot be promoted."}, 
-								 {"const": "is_hidden", "description": "If this post is marked as hidden (Applies to Pages only)."}, 
-								 {"const": "is_instagram_eligible", "description": "Whether this post can be promoted in Instagram."}, 
-								 {"const": "is_published", "description": "Indicates whether a scheduled post was published (applies to scheduled Page Post only, for users post and instantly published posts this value is always true). Note that this value is always false for page posts created as part of the Ad Creation process."}, 
-								 {"const": "link", "description": "The link attached to this post."}, 
-								 {"const": "message", "description": "The status message in the post."}, 
-								 {"const": "message_tags", "description": "An array of profiles tagged in the message text. If you read this field with a user user access token, it returns only the current user."}, 
-								 {"const": "name", "description": "The name of the link."}, 
-								 {"const": "object_id", "description": "The ID of any uploaded photo or video attached to the post."}, 
-								 {"const": "parent_id", "description": "The ID of a parent post for this post, if it exists.  For example, if this story is a 'Your Page was mentioned in a post' story, the parent_id will be the original post where the mention happened."}, 
-								 {"const": "permalink_url", "description": "URL to the permalink page of the post."}, 
-								 {"const": "picture", "description": "URL to a resized version of the Photo published in the Post or scraped from a link in the Post. If the photo's largest dimension exceeds 130 pixels, it will be resized, with the largest dimension set to 130."}, 
-								 {"const": "place", "description": "Any location information attached to the post."}, 
-								 {"const": "privacy", "description": "The privacy settings of the post."}, 
-								 {"const": "promotable_id", "description": "ID of post to use for promotion for stories that cannot be promoted directly."}, 
-								 {"const": "properties", "description": "A list of properties for any attached video, for example, the length of the video."}, 
-								 {"const": "shares", "description": "The shares count of this post. The share count may include deleted posts and posts you cannot see for privacy reasons."}, 
-								 {"const": "source", "description": "A URL to any Flash movie or video file attached to the post."}, 
-								 {"const": "status_type", "description": "Description of the type of a status update."}, 
-								 {"const": "story", "description": "Deprecated"}, 
-								 {"const": "story_tags", "description": "Deprecated field, same as message_tags."}, 
-								 {"const": "targeting", "description": "Object that limits the audience for this content. Only audiences in the specified demographics can view this content. The demographics are additive. Each additional value adds its audience to the cumulative targeted audience. These values do not override any Page-level demographic restrictions that may be in place."}, 
-								 {"const": "to", "description": "Profiles mentioned or targeted in this post. If you read this field with a user access token, it returns only the current user."}, 
-								 {"const": "type", "description": "A string indicating the object type of this post."}, 
-								 {"const": "updated_time", "description": "This field's behavior depends on the type of object the Post is on: Group Post - Time when the Post was created or commented upon. Page Posts - Time when the Post was created, edited, or commented upon. User Posts - Time when the Post was created, edited, or commented upon."}, 
+								 {"const": "id", "description": "The post ID"},
+								 {"const": "actions", "description": "Action links"},
+								 {"const": "admin_creator", "description": "The admin creator of a Page post. If the Page has only one admin, no data will be returned. Requires a Page Access Token and the business_management permission."},
+								 {"const": "allowed_advertising_objects", "description": "Objectives under which this post can be advertised"},
+								 {"const": "application", "description": "Information about the app this post was published by."},
+								 {"const": "attachments", "description": "Any attachments that are associated with the story"},
+								 {"const": "backdated_time", "description": "The backdated time for backdate post. For regular post, this field will be set to null."},
+								 {"const": "call_to_action", "description": "The call to action type used in any Page posts for mobile app engagement ads."},
+								 {"const": "can_reply_privately", "description": "Whether the Page viewer can send a private reply to this Post. Requires the read_page_mailboxes permission."},
+								 {"const": "caption", "description": "Link caption in post that appears below name. The caption must be an actual URLs and should accurately reflect the URL and associated advertiser or business someone visits when they click on it."},
+								 {"const": "child_attachments", "description": "Sub-shares of a multi-link share post."},
+								 {"const": "created_time", "description": "The time the post was initially published. For a post about a life event, this will be the date and time of the life event."},
+								 {"const": "description", "description": "A description of a link in the post (appears beneath the caption)."},
+								 {"const": "feed_targeting", "description": "Object that controls news feed targeting for this post. Anyone in these groups will be more likely to see this post, others will be less likely, but may still see it anyway. Any of the targeting fields shown here can be used, none are required (applies to Pages only)."},
+								 {"const": "from", "description": "Information (name and id) about the Profile that created the Post.  If you read this field with a user access token, it returns only the current user."},
+								 {"const": "full_picture", "description": "URL to a full-sized version of the Photo published in the Post or scraped from a link in the Post. If the photo's largest dimension exceeds 720 pixels, it will be resized, with the largest dimension set to 720."},
+								 {"const": "icon", "description": "A link to an icon representing the type of this post."},
+								 {"const": "instagram_eligibility", "description": "Whether the post can be promoted on Instagram. It returns the enum eligible if it can be promoted.  Otherwise it returns an enum for why it cannot be promoted."},
+								 {"const": "is_hidden", "description": "If this post is marked as hidden (Applies to Pages only)."},
+								 {"const": "is_instagram_eligible", "description": "Whether this post can be promoted in Instagram."},
+								 {"const": "is_published", "description": "Indicates whether a scheduled post was published (applies to scheduled Page Post only, for users post and instantly published posts this value is always true). Note that this value is always false for page posts created as part of the Ad Creation process."},
+								 {"const": "link", "description": "The link attached to this post."},
+								 {"const": "message", "description": "The status message in the post."},
+								 {"const": "message_tags", "description": "An array of profiles tagged in the message text. If you read this field with a user user access token, it returns only the current user."},
+								 {"const": "name", "description": "The name of the link."},
+								 {"const": "object_id", "description": "The ID of any uploaded photo or video attached to the post."},
+								 {"const": "parent_id", "description": "The ID of a parent post for this post, if it exists.  For example, if this story is a 'Your Page was mentioned in a post' story, the parent_id will be the original post where the mention happened."},
+								 {"const": "permalink_url", "description": "URL to the permalink page of the post."},
+								 {"const": "picture", "description": "URL to a resized version of the Photo published in the Post or scraped from a link in the Post. If the photo's largest dimension exceeds 130 pixels, it will be resized, with the largest dimension set to 130."},
+								 {"const": "place", "description": "Any location information attached to the post."},
+								 {"const": "privacy", "description": "The privacy settings of the post."},
+								 {"const": "promotable_id", "description": "ID of post to use for promotion for stories that cannot be promoted directly."},
+								 {"const": "properties", "description": "A list of properties for any attached video, for example, the length of the video."},
+								 {"const": "shares", "description": "The shares count of this post. The share count may include deleted posts and posts you cannot see for privacy reasons."},
+								 {"const": "source", "description": "A URL to any Flash movie or video file attached to the post."},
+								 {"const": "status_type", "description": "Description of the type of a status update."},
+								 {"const": "story", "description": "Deprecated"},
+								 {"const": "story_tags", "description": "Deprecated field, same as message_tags."},
+								 {"const": "targeting", "description": "Object that limits the audience for this content. Only audiences in the specified demographics can view this content. The demographics are additive. Each additional value adds its audience to the cumulative targeted audience. These values do not override any Page-level demographic restrictions that may be in place."},
+								 {"const": "to", "description": "Profiles mentioned or targeted in this post. If you read this field with a user access token, it returns only the current user."},
+								 {"const": "type", "description": "A string indicating the object type of this post."},
+								 {"const": "updated_time", "description": "This field's behavior depends on the type of object the Post is on: Group Post - Time when the Post was created or commented upon. Page Posts - Time when the Post was created, edited, or commented upon. User Posts - Time when the Post was created, edited, or commented upon."},
 								 {"const": "with_tags", "description": "Profiles tagged as being 'with' the publisher of the post. If you read this field with a user access token, it returns only the current user."}
 								 ]
 							}
 						},
-						"example" : "id,caption,message,created_time,from,type,status_type" 
+						"example" : "id,caption,message,created_time,from,type,status_type"
 					}
 				],
 			"responses" : {
@@ -1844,7 +1844,7 @@
 									"to":{"description":"Profiles mentioned or targeted in this post. If you read this field with a user access token, it returns only the current user."},
 									"type":{"description":"A string indicating the object type of this post."},
 									"updated_time":{"description":"This field's behavior depends on the type of object the Post is on:"},
-									"with_tags":{"description":"Profiles tagged as being 'with' the publisher of the post. If you read this field with a user access token, it returns only the current user."}                            
+									"with_tags":{"description":"Profiles tagged as being 'with' the publisher of the post. If you read this field with a user access token, it returns only the current user."}
 									}
 								}
 							}
@@ -1858,8 +1858,8 @@
                 "summary" : "Comments on a Facebook post.",
                 "externalDocs": {
                     "url":"https://developers.facebook.com/docs/graph-api/reference/v3.2/object/comments"
-                },             
-                "parameters" : [                 
+                },
+                "parameters" : [
                     {
                       "name" : "post-id",
                       "in" : "path",
@@ -1867,7 +1867,7 @@
                       "required" : true,
                       "schema":{"type":"string"}
                     },
-					{					
+					{
                       "name" : "summary",
                       "in" : "query",
                       "description" : "A summary of metadata about the comments on the object. Importantly this metadata includes order which indicates how the comments are being sorted.",
@@ -1882,7 +1882,7 @@
                       "schema":
 						{"type":"string",
 						"enum": ["toplevel", "stream"]}
-                    },	
+                    },
                     {
                       "name" : "fields",
                       "in" : "query",
@@ -1908,7 +1908,7 @@
 								 {"const": "object", "description": "For comments on a photo or video, this is that object. Otherwise, this is empty."},
 								 {"const": "parent", "description": "For comment replies, this the comment that this is a reply to."},
 								 {"const": "private_reply_conversation", "description": "For comments with private replies, gets conversation between the Page and author of the comment (Page viewers only)"},
-								 {"const": "user_likes", "description": "Whether the viewer has liked this comment."}							
+								 {"const": "user_likes", "description": "Whether the viewer has liked this comment."}
 								]
 							}
 						},
@@ -1944,7 +1944,7 @@
 												 "object":{"description": "For comments on a photo or video, this is that object. Otherwise, this is empty."},
 												 "parent":{"description": "For comment replies, this the comment that this is a reply to."},
 												 "private_reply_conversation":{"description": "For comments with private replies, gets conversation between the Page and author of the comment (Page viewers only)"},
-												 "user_likes":{"description": "Whether the viewer has liked this comment."}	
+												 "user_likes":{"description": "Whether the viewer has liked this comment."}
 												}
 											}
 										},
@@ -1968,15 +1968,15 @@
                 "summary" : "People who like a Facebook post.",
                 "externalDocs": {
                     "url":"https://developers.facebook.com/docs/graph-api/reference/object/likes"
-                },             
-                "parameters" : [                 
+                },
+                "parameters" : [
                     {
                       "name" : "post-id",
                       "in" : "path",
                       "description" : "ID of the post",
                       "required" : true,
                       "schema":{"type":"string"}
-                    },	
+                    },
 					{
                       "name" : "summary",
                       "in" : "query",
@@ -2008,22 +2008,22 @@
 						}
 					}
 				}
-			}	
+			}
 		},
 		"/{post-id}/reactions": {
             "get" : {
                 "summary" : "Reactions on a Facebook post.",
                 "externalDocs": {
                     "url":"https://developers.facebook.com/docs/graph-api/reference/v3.2/object/reactions"
-                },             
-                "parameters" : [                 
+                },
+                "parameters" : [
                     {
                       "name" : "post-id",
                       "in" : "path",
                       "description" : "ID of the post",
                       "required" : true,
                       "schema":{"type":"string"}
-                    },	
+                    },
 					{
                       "name" : "type",
                       "in" : "query",
@@ -2031,7 +2031,7 @@
                       "schema":
 						{"type":"string",
 						"enum": ["NONE","LIKE","LOVE","WOW","HAHA","SAD","ANGRY"]},
-					  "example":"HAHA"				
+					  "example":"HAHA"
 					},
 					{
                       "name" : "summary",
@@ -2071,15 +2071,15 @@
                 "summary" : "This edge represents any posts where the original object was shared on Facebook.",
                 "externalDocs": {
                     "url":"https://developers.facebook.com/docs/graph-api/reference/v3.2/object/sharedposts"
-                },             
-                "parameters" : [                 
+                },
+                "parameters" : [
                     {
                       "name" : "post-id",
                       "in" : "path",
                       "description" : "ID of the post",
                       "required" : true,
                       "schema":{"type":"string"}
-                    },	
+                    },
                     {
                       "name" : "fields",
                       "in" : "query",
@@ -2089,48 +2089,48 @@
                         "items" : {
                             "type":"string",
                             "oneOf":[
-								 {"const": "id", "description": "The post ID"}, 
-								 {"const": "actions", "description": "Action links"}, 
-								 {"const": "admin_creator", "description": "The admin creator of a Page post. If the Page has only one admin, no data will be returned. Requires a Page Access Token and the business_management permission."}, 
-								 {"const": "allowed_advertising_objects", "description": "Objectives under which this post can be advertised"}, 
-								 {"const": "application", "description": "Information about the app this post was published by."}, 
-								 {"const": "attachments", "description": "Any attachments that are associated with the story"}, 
-								 {"const": "backdated_time", "description": "The backdated time for backdate post. For regular post, this field will be set to null."}, 
-								 {"const": "call_to_action", "description": "The call to action type used in any Page posts for mobile app engagement ads."}, 
-								 {"const": "can_reply_privately", "description": "Whether the Page viewer can send a private reply to this Post. Requires the read_page_mailboxes permission."}, 
-								 {"const": "caption", "description": "Link caption in post that appears below name. The caption must be an actual URLs and should accurately reflect the URL and associated advertiser or business someone visits when they click on it."}, 
-								 {"const": "child_attachments", "description": "Sub-shares of a multi-link share post."}, 
-								 {"const": "created_time", "description": "The time the post was initially published. For a post about a life event, this will be the date and time of the life event."}, 
-								 {"const": "description", "description": "A description of a link in the post (appears beneath the caption)."}, 
-								 {"const": "feed_targeting", "description": "Object that controls news feed targeting for this post. Anyone in these groups will be more likely to see this post, others will be less likely, but may still see it anyway. Any of the targeting fields shown here can be used, none are required (applies to Pages only)."}, 
-								 {"const": "from", "description": "Information (name and id) about the Profile that created the Post.  If you read this field with a user access token, it returns only the current user."}, 
-								 {"const": "full_picture", "description": "URL to a full-sized version of the Photo published in the Post or scraped from a link in the Post. If the photo's largest dimension exceeds 720 pixels, it will be resized, with the largest dimension set to 720."}, 
-								 {"const": "icon", "description": "A link to an icon representing the type of this post."}, 
-								 {"const": "instagram_eligibility", "description": "Whether the post can be promoted on Instagram. It returns the enum eligible if it can be promoted.  Otherwise it returns an enum for why it cannot be promoted."}, 
-								 {"const": "is_hidden", "description": "If this post is marked as hidden (Applies to Pages only)."}, 
-								 {"const": "is_instagram_eligible", "description": "Whether this post can be promoted in Instagram."}, 
-								 {"const": "is_published", "description": "Indicates whether a scheduled post was published (applies to scheduled Page Post only, for users post and instantly published posts this value is always true). Note that this value is always false for page posts created as part of the Ad Creation process."}, 
-								 {"const": "link", "description": "The link attached to this post."}, 
-								 {"const": "message", "description": "The status message in the post."}, 
-								 {"const": "message_tags", "description": "An array of profiles tagged in the message text. If you read this field with a user user access token, it returns only the current user."}, 
-								 {"const": "name", "description": "The name of the link."}, 
-								 {"const": "object_id", "description": "The ID of any uploaded photo or video attached to the post."}, 
-								 {"const": "parent_id", "description": "The ID of a parent post for this post, if it exists.  For example, if this story is a 'Your Page was mentioned in a post' story, the parent_id will be the original post where the mention happened."}, 
-								 {"const": "permalink_url", "description": "URL to the permalink page of the post."}, 
-								 {"const": "picture", "description": "URL to a resized version of the Photo published in the Post or scraped from a link in the Post. If the photo's largest dimension exceeds 130 pixels, it will be resized, with the largest dimension set to 130."}, 
-								 {"const": "place", "description": "Any location information attached to the post."}, 
-								 {"const": "privacy", "description": "The privacy settings of the post."}, 
-								 {"const": "promotable_id", "description": "ID of post to use for promotion for stories that cannot be promoted directly."}, 
-								 {"const": "properties", "description": "A list of properties for any attached video, for example, the length of the video."}, 
-								 {"const": "shares", "description": "The shares count of this post. The share count may include deleted posts and posts you cannot see for privacy reasons."}, 
-								 {"const": "source", "description": "A URL to any Flash movie or video file attached to the post."}, 
-								 {"const": "status_type", "description": "Description of the type of a status update."}, 
-								 {"const": "story", "description": "Deprecated"}, 
-								 {"const": "story_tags", "description": "Deprecated field, same as message_tags."}, 
-								 {"const": "targeting", "description": "Object that limits the audience for this content. Only audiences in the specified demographics can view this content. The demographics are additive. Each additional value adds its audience to the cumulative targeted audience. These values do not override any Page-level demographic restrictions that may be in place."}, 
-								 {"const": "to", "description": "Profiles mentioned or targeted in this post. If you read this field with a user access token, it returns only the current user."}, 
-								 {"const": "type", "description": "A string indicating the object type of this post."}, 
-								 {"const": "updated_time", "description": "This field's behavior depends on the type of object the Post is on: Group Post - Time when the Post was created or commented upon. Page Posts - Time when the Post was created, edited, or commented upon. User Posts - Time when the Post was created, edited, or commented upon."}, 
+								 {"const": "id", "description": "The post ID"},
+								 {"const": "actions", "description": "Action links"},
+								 {"const": "admin_creator", "description": "The admin creator of a Page post. If the Page has only one admin, no data will be returned. Requires a Page Access Token and the business_management permission."},
+								 {"const": "allowed_advertising_objects", "description": "Objectives under which this post can be advertised"},
+								 {"const": "application", "description": "Information about the app this post was published by."},
+								 {"const": "attachments", "description": "Any attachments that are associated with the story"},
+								 {"const": "backdated_time", "description": "The backdated time for backdate post. For regular post, this field will be set to null."},
+								 {"const": "call_to_action", "description": "The call to action type used in any Page posts for mobile app engagement ads."},
+								 {"const": "can_reply_privately", "description": "Whether the Page viewer can send a private reply to this Post. Requires the read_page_mailboxes permission."},
+								 {"const": "caption", "description": "Link caption in post that appears below name. The caption must be an actual URLs and should accurately reflect the URL and associated advertiser or business someone visits when they click on it."},
+								 {"const": "child_attachments", "description": "Sub-shares of a multi-link share post."},
+								 {"const": "created_time", "description": "The time the post was initially published. For a post about a life event, this will be the date and time of the life event."},
+								 {"const": "description", "description": "A description of a link in the post (appears beneath the caption)."},
+								 {"const": "feed_targeting", "description": "Object that controls news feed targeting for this post. Anyone in these groups will be more likely to see this post, others will be less likely, but may still see it anyway. Any of the targeting fields shown here can be used, none are required (applies to Pages only)."},
+								 {"const": "from", "description": "Information (name and id) about the Profile that created the Post.  If you read this field with a user access token, it returns only the current user."},
+								 {"const": "full_picture", "description": "URL to a full-sized version of the Photo published in the Post or scraped from a link in the Post. If the photo's largest dimension exceeds 720 pixels, it will be resized, with the largest dimension set to 720."},
+								 {"const": "icon", "description": "A link to an icon representing the type of this post."},
+								 {"const": "instagram_eligibility", "description": "Whether the post can be promoted on Instagram. It returns the enum eligible if it can be promoted.  Otherwise it returns an enum for why it cannot be promoted."},
+								 {"const": "is_hidden", "description": "If this post is marked as hidden (Applies to Pages only)."},
+								 {"const": "is_instagram_eligible", "description": "Whether this post can be promoted in Instagram."},
+								 {"const": "is_published", "description": "Indicates whether a scheduled post was published (applies to scheduled Page Post only, for users post and instantly published posts this value is always true). Note that this value is always false for page posts created as part of the Ad Creation process."},
+								 {"const": "link", "description": "The link attached to this post."},
+								 {"const": "message", "description": "The status message in the post."},
+								 {"const": "message_tags", "description": "An array of profiles tagged in the message text. If you read this field with a user user access token, it returns only the current user."},
+								 {"const": "name", "description": "The name of the link."},
+								 {"const": "object_id", "description": "The ID of any uploaded photo or video attached to the post."},
+								 {"const": "parent_id", "description": "The ID of a parent post for this post, if it exists.  For example, if this story is a 'Your Page was mentioned in a post' story, the parent_id will be the original post where the mention happened."},
+								 {"const": "permalink_url", "description": "URL to the permalink page of the post."},
+								 {"const": "picture", "description": "URL to a resized version of the Photo published in the Post or scraped from a link in the Post. If the photo's largest dimension exceeds 130 pixels, it will be resized, with the largest dimension set to 130."},
+								 {"const": "place", "description": "Any location information attached to the post."},
+								 {"const": "privacy", "description": "The privacy settings of the post."},
+								 {"const": "promotable_id", "description": "ID of post to use for promotion for stories that cannot be promoted directly."},
+								 {"const": "properties", "description": "A list of properties for any attached video, for example, the length of the video."},
+								 {"const": "shares", "description": "The shares count of this post. The share count may include deleted posts and posts you cannot see for privacy reasons."},
+								 {"const": "source", "description": "A URL to any Flash movie or video file attached to the post."},
+								 {"const": "status_type", "description": "Description of the type of a status update."},
+								 {"const": "story", "description": "Deprecated"},
+								 {"const": "story_tags", "description": "Deprecated field, same as message_tags."},
+								 {"const": "targeting", "description": "Object that limits the audience for this content. Only audiences in the specified demographics can view this content. The demographics are additive. Each additional value adds its audience to the cumulative targeted audience. These values do not override any Page-level demographic restrictions that may be in place."},
+								 {"const": "to", "description": "Profiles mentioned or targeted in this post. If you read this field with a user access token, it returns only the current user."},
+								 {"const": "type", "description": "A string indicating the object type of this post."},
+								 {"const": "updated_time", "description": "This field's behavior depends on the type of object the Post is on: Group Post - Time when the Post was created or commented upon. Page Posts - Time when the Post was created, edited, or commented upon. User Posts - Time when the Post was created, edited, or commented upon."},
 								 {"const": "with_tags", "description": "Profiles tagged as being 'with' the publisher of the post. If you read this field with a user access token, it returns only the current user."}
 								 ]
 							}
@@ -2194,7 +2194,7 @@
 													"to":{"description":"Profiles mentioned or targeted in this post. If you read this field with a user access token, it returns only the current user."},
 													"type":{"description":"A string indicating the object type of this post."},
 													"updated_time":{"description":"This field's behavior depends on the type of object the Post is on:"},
-													"with_tags":{"description":"Profiles tagged as being 'with' the publisher of the post. If you read this field with a user access token, it returns only the current user."}                            
+													"with_tags":{"description":"Profiles tagged as being 'with' the publisher of the post. If you read this field with a user access token, it returns only the current user."}
 												}
 											}
 										}
@@ -2211,8 +2211,8 @@
                 "summary" : "This node returns a single comment.",
                 "externalDocs": {
                     "url":"https://developers.facebook.com/docs/graph-api/reference/v3.2/comment"
-                },             
-                "parameters" : [                 
+                },
+                "parameters" : [
                     {
                       "name" : "comment-id",
                       "in" : "path",
@@ -2245,7 +2245,7 @@
 								 {"const": "object", "description": "For comments on a photo or video, this is that object. Otherwise, this is empty."},
 								 {"const": "parent", "description": "For comment replies, this the comment that this is a reply to."},
 								 {"const": "private_reply_conversation", "description": "For comments with private replies, gets conversation between the Page and author of the comment (Page viewers only)"},
-								 {"const": "user_likes", "description": "Whether the viewer has liked this comment."}							
+								 {"const": "user_likes", "description": "Whether the viewer has liked this comment."}
 								]
 							}
 						},
@@ -2276,7 +2276,7 @@
 										"object":{"description": "For comments on a photo or video, this is that object. Otherwise, this is empty."},
 										"parent":{"description": "For comment replies, this the comment that this is a reply to."},
 										"private_reply_conversation":{"description": "For comments with private replies, gets conversation between the Page and author of the comment (Page viewers only)"},
-										"user_likes":{"description": "Whether the viewer has liked this comment."}	
+										"user_likes":{"description": "Whether the viewer has liked this comment."}
 										}
 									}
 								}
@@ -2290,8 +2290,8 @@
                 "summary" : "Comments that reply to this comment.",
                 "externalDocs": {
                     "url":"https://developers.facebook.com/docs/graph-api/reference/v3.2/object/comments"
-                },             
-                "parameters" : [                 
+                },
+                "parameters" : [
                     {
                       "name" : "comment-id",
                       "in" : "path",
@@ -2299,7 +2299,7 @@
                       "required" : true,
                       "schema":{"type":"string"}
                     },
-					{					
+					{
                       "name" : "summary",
                       "in" : "query",
                       "description" : "A summary of metadata about the comments on the object. Importantly this metadata includes order which indicates how the comments are being sorted.",
@@ -2313,7 +2313,7 @@
                       "schema":
 						{"type":"string",
 						"enum": ["toplevel", "stream"]}
-                    },	
+                    },
                     {
                       "name" : "fields",
                       "in" : "query",
@@ -2339,7 +2339,7 @@
 								 {"const": "object", "description": "For comments on a photo or video, this is that object. Otherwise, this is empty."},
 								 {"const": "parent", "description": "For comment replies, this the comment that this is a reply to."},
 								 {"const": "private_reply_conversation", "description": "For comments with private replies, gets conversation between the Page and author of the comment (Page viewers only)"},
-								 {"const": "user_likes", "description": "Whether the viewer has liked this comment."}							
+								 {"const": "user_likes", "description": "Whether the viewer has liked this comment."}
 								]
 							}
 						},
@@ -2375,7 +2375,7 @@
 												 "object":{"description": "For comments on a photo or video, this is that object. Otherwise, this is empty."},
 												 "parent":{"description": "For comment replies, this the comment that this is a reply to."},
 												 "private_reply_conversation":{"description": "For comments with private replies, gets conversation between the Page and author of the comment (Page viewers only)"},
-												 "user_likes":{"description": "Whether the viewer has liked this comment."}	
+												 "user_likes":{"description": "Whether the viewer has liked this comment."}
 												}
 											}
 										},
@@ -2399,15 +2399,15 @@
                 "summary" : "People who like this comment.",
                 "externalDocs": {
                     "url":"https://developers.facebook.com/docs/graph-api/reference/object/likes"
-					},             
-                "parameters" : [                 
+					},
+                "parameters" : [
                     {
                       "name" : "comment-id",
                       "in" : "path",
                       "description" : "ID of the comment",
                       "required" : true,
                       "schema":{"type":"string"}
-                    },		
+                    },
 					{
                       "name" : "summary",
                       "in" : "query",
@@ -2439,22 +2439,22 @@
 						}
 					}
 				}
-			}	
+			}
 		},
 		"/{comment-id}/reactions": {
             "get" : {
                 "summary" : "People who have reacted to this post.",
                 "externalDocs": {
 					"url":"https://developers.facebook.com/docs/graph-api/reference/v3.2/object/reactions"
-					}, 
-                "parameters" : [                 
+					},
+                "parameters" : [
                     {
                       "name" : "comment-id",
                       "in" : "path",
                       "description" : "ID of the comment",
                       "required" : true,
                       "schema":{"type":"string"}
-                    },	
+                    },
 					{
                       "name" : "type",
                       "in" : "query",
@@ -2495,15 +2495,15 @@
 						}
 					}
 				}
-			}				
+			}
 		},
         "/pages/search": {
             "get" : {
                 "summary" : "Search for Pages on Facebook. Find Pages to @Mention, manage Page locations, and tag a Page to show branded content.",
                 "externalDocs": {
                     "url":"https://developers.facebook.com/docs/pages/searching/"
-                },                
-                "parameters" : [ 
+                },
+                "parameters" : [
                     {
                       "name" : "q",
                       "in" : "query",
@@ -2557,13 +2557,13 @@
 												}
 											}
 										}
-                                    }  
+                                    }
                                 }
                             }
                         }
                     }
                 }
-            }              
+            }
         }
     }
 }
